@@ -1,6 +1,3 @@
-let array = [3, 5, -4, 8, 11, 1, -1, 6]
-let targetSum = 10
-
 function twoNumberSum(array, targetSum) {
   for (let i = 0; i < array.length; i++) {
     let firstNum = array[i]
@@ -16,9 +13,5 @@ function twoNumberSum(array, targetSum) {
 
   return []
 }
-
-const result = twoNumberSum(array, targetSum)
-
-console.log(result)
 
 module.exports = twoNumberSum

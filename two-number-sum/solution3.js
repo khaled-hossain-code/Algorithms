@@ -1,6 +1,3 @@
-let array = [3, 5, -4, 8, 11, 1, -1, 6]
-let targetSum = 10
-
 function twoNumberSum(array, targetSum) {
   const sortedArray = array.sort((a, b) => a - b)
   let rightPointer = sortedArray.length - 1
@@ -9,6 +6,7 @@ function twoNumberSum(array, targetSum) {
   for (let i = 0; i < sortedArray.length; i++) {
     let leftNum = sortedArray[leftPointer]
     let rightNum = sortedArray[rightPointer]
+    
 
     if (leftNum + rightNum === targetSum) {
       return [leftNum, rightNum]
@@ -22,6 +20,4 @@ function twoNumberSum(array, targetSum) {
   return []
 }
 
-const result = twoNumberSum(array, targetSum)
-
-console.log(result)
+module.exports = twoNumberSum

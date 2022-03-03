@@ -1,21 +1,20 @@
-let array = [3, 5, -4, 8, 11, 1, -1, 6]
-let targetSum = 10
-
 function twoNumberSum(array, targetSum) {
   let hashTable = {}
 
+  console.log('inside solution2')
   for (const num1 of array) {
     const reminder = targetSum - num1
     const lookupValue = hashTable[reminder]
-
     if (lookupValue) {
+      console.log([num1, reminder])
       return [num1, reminder]
     } else {
+      console.log(hashTable)
       hashTable[num1] = true
     }
   }
+
+  return [];
 }
 
-const result = twoNumberSum(array, targetSum)
-
-console.log(result)
+module.exports = twoNumberSum
