@@ -20,3 +20,5 @@ function twoNumberSum(array, targetSum) {
 const result = twoNumberSum(array, targetSum)
 
 console.log(result)
+
+module.exports = twoNumberSum

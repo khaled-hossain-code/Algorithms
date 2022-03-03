@@ -1,0 +1,12 @@
+{
+  "name": "Algorithms",
+  "version": "1.0.0",
+  "repository": "git@github.com:khaled-hossain-code/Algorithms.git",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "jest": "^27.5.1"
+  }
+}

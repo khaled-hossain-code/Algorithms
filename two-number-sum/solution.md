@@ -35,7 +35,7 @@ step4: y = 10 - 8 = 2, is 2 in our hash table? Nop. Then add 8 to the has table 
 
 step5: y = 10 - 11 = -1, is -1 in our hash table? Nop. Then add 11 to the has table { 3, 5, -4, 8, 11 }
 
-step6: y = 10 - 1 = 10, is 9 in our hash table? Nop. Then add 1 to the has table { 3, 5, -4, 8, 11, 1 }
+step6: y = 10 - 1 = 9, is 9 in our hash table? Nop. Then add 1 to the has table { 3, 5, -4, 8, 11, 1 }
 
 step7: y = 10 - (-1) = 11, is 11 in our hash table? YES!. Then return [11, -1]. that's the answer
 
