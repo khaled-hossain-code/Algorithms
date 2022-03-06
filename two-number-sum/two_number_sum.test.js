@@ -1,13 +1,11 @@
-const solution1 = require('./solution1');
-const solution2 = require('./solution2');
-const solution3 = require('./solution3');
+const {twoNumberSum1, twoNumberSum2, twoNumberSum3} = require('./two_number_sum');
 const array = [3, 5, -4, 8, 11, 1, -1, 6];
-const solutions = [solution1, solution2, solution3];
+const solutions = [twoNumberSum1, twoNumberSum2, twoNumberSum3];
 
 for (let solutionNumber = 0; solutionNumber < solutions.length; solutionNumber++) {
     const solution = solutions[solutionNumber];
 
-    describe(`solution${solutionNumber + 1}`, () => {
+    describe(`two number sum solution${solutionNumber + 1}`, () => {
         test(' returns 2 numbers', () => {
             let targetSum = 10
             expect(solution(array, targetSum).length).toEqual(2);

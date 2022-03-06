@@ -1,4 +1,19 @@
+# Problem
+
+## Two Number Sum
+
+[3, 5, -4, 8, 11, 1, -1, 6] array of distinct number value
+
+target sum 10
+
+find the pair of number which is equal to target sum. If there is none then return empty array
+
+ans: [11, -1]
+
+# solutions
+
 ## solution 1
+
 ---
 
 two for loop and check if the addition is equal to target number
@@ -8,7 +23,9 @@ two for loop and check if the addition is equal to target number
 **Time Complexity**: O(n^2). as we are traversing our array within another array
 
 ## solution 2
+
 ---
+
 use a hash table of numbers.
 
 target Sum = 10
@@ -43,8 +60,10 @@ step7: y = 10 - (-1) = 11, is 11 in our hash table? YES!. Then return [11, -1]. 
 
 **Space Complexity**: O(N). because the large our array is our hash table will be at worst that large.
 
-## solution 3 
+## solution 3
+
 ---
+
 sort the array and apply two pointer method.
 
 target-sum = 10
@@ -57,9 +76,9 @@ left pointer, L = -4
 
 right pointer, R = 11
 
-sum L & R and compare. 
+sum L & R and compare.
 
-if L + R == target-sum; then these two is our number, 
+if L + R == target-sum; then these two is our number,
 
 else if L + R > target-sum; then we should move our pointer so that sum decrease. so moving the right pointer to its left will give us a smaller number.
 
