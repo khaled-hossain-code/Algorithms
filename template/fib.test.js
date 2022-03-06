@@ -1,0 +1,1 @@
+const {fibonacci1, fibonacci2} = require('./fib');
