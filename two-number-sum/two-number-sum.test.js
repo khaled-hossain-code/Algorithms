@@ -1,4 +1,4 @@
-const {twoNumberSum1, twoNumberSum2, twoNumberSum3} = require('./two_number_sum');
+const {twoNumberSum1, twoNumberSum2, twoNumberSum3} = require('./two-number-sum');
 const array = [3, 5, -4, 8, 11, 1, -1, 6];
 const solutions = [twoNumberSum1, twoNumberSum2, twoNumberSum3];
 
