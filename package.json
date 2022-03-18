@@ -9,5 +9,8 @@
   },
   "dependencies": {
     "jest": "^27.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.21"
   }
 }
